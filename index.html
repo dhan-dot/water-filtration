@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparative Water Filtration Research</title>
+    <title>Comparative Analysis of Water Filtration Methods</title>
     <!-- Google Fonts for Modern Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,7 @@
 
         header h1 {
             margin: 0 auto 1.25rem;
-            font-size: 2.4rem;
+            font-size: 2.3rem;
             font-weight: 800;
             max-width: 920px;
             line-height: 1.25;
@@ -76,7 +76,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.5rem;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
@@ -207,27 +207,14 @@
             font-size: 1.02rem;
         }
 
-        /* Key Terms Cards */
-        .terms-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1rem;
-            margin-top: 1.25rem;
-        }
-
-        .term-card {
+        /* Abstract Box */
+        .abstract-box {
             background: #f8fafc;
             border-left: 4px solid var(--primary);
-            padding: 1rem 1.25rem;
+            padding: 1.25rem 1.5rem;
             border-radius: 0 8px 8px 0;
-            border: 1px solid var(--border-color);
-            border-left-width: 4px;
-        }
-
-        .term-card strong {
-            color: var(--primary-dark);
-            display: block;
-            margin-bottom: 0.25rem;
+            margin-bottom: 1.5rem;
+            font-style: normal;
         }
 
         /* Data Table */
@@ -352,22 +339,23 @@
 <body>
 
     <header>
-        <span class="header-tag">Workshop #5 Research Project</span>
-        <h1>Comparative Efficacy of Five Water Filtration Technologies on Local Creek Water Quality</h1>
+        <span class="header-tag">Next In Research</span>
+        <h1>Comparative Analysis of Water Filtration Methods for Improving Freshwater Quality</h1>
         <div class="meta-info">
-            <div class="meta-item"><strong>Authors:</strong> Aria, Ashi, Dhanwin</div>
-            <div class="meta-item"><strong>Mentor:</strong> Rhea Desai</div>
+            <div class="meta-item"><strong>Authors:</strong> Rhea Desai, Aria Sanchez-Zubieta, Dhanwin Shivakumar, Ashi Thakur</div>
+            <div class="meta-item"><strong>Location:</strong> Ashburn Park Creek (Ashburn, VA)</div>
             <div class="meta-item"><strong>Date:</strong> July 23, 2026</div>
         </div>
     </header>
 
     <nav>
         <div class="nav-container">
+            <a href="#abstract">Abstract</a>
             <a href="#intro">1. Introduction</a>
-            <a href="#methods">2. Materials & Methods</a>
+            <a href="#methods">2. Methods</a>
             <a href="#photos">3. Experimental Photos</a>
-            <a href="#references">4. References</a>
-            <a href="#ai-disclosure">5. AI Disclosure</a>
+            <a href="#results">4. Results & Discussion</a>
+            <a href="#references">5. References</a>
         </div>
     </nav>
 
@@ -377,113 +365,98 @@
         <div class="metrics-grid">
             <div class="metric-card">
                 <div class="number">25</div>
-                <div class="label">Total Experimental Trials</div>
+                <div class="label">Total Samples Tested</div>
+            </div>
+            <div class="metric-card">
+                <div class="number">200 mL</div>
+                <div class="label">Volume per Sample</div>
             </div>
             <div class="metric-card">
                 <div class="number">5</div>
-                <div class="label">Filter Tech Tested</div>
-            </div>
-            <div class="metric-card">
-                <div class="number">n = 5</div>
-                <div class="label">Replicates per Filter</div>
+                <div class="label">Filtration Methods</div>
             </div>
             <div class="metric-card">
                 <div class="number">ANOVA</div>
-                <div class="label">Inferential Test</div>
+                <div class="label">Statistical Test</div>
             </div>
         </div>
+
+        <!-- Abstract Section -->
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <div class="abstract-box">
+                <p>Water contamination is an escalating concern due to its impact on environmental ecosystems and human health. Water filtration technology provides a practical approach for reducing pollutants and improving freshwater quality; however, the effectiveness of different purification methods can vary depending on their mechanisms and individual techniques. This study evaluated five water filtration technologies: mechanical, ultraviolet treatment, reverse osmosis, granular activated carbon, and ion exchange resins. The purpose of this study was to determine which method most effectively improved the quality of freshwater samples collected from a local source. In this case, this experiment tested water at Ashburn Park Creek in Ashburn, Virginia. Twenty-five independent water samples were collected and tested, each of 200 milliliters, with five samples assigned to each filter. The water quality was assessed before and after filtration using turbidity measurements and drinking water quality test strips. Changes in the water quality indicators were analyzed with the use of a one-way analysis of variance (ANOVA) to determine whether significant differences existed among the five filtration methods. It was hypothesized that the granular activated carbon filter would demonstrate the greatest improvement due to its ability to adsorb various chemical components within the filter.</p>
+            </div>
+        </section>
 
         <!-- Section 1: Introduction -->
         <section id="intro">
             <h2>1. Introduction</h2>
-            <p>Water pollution is one of the most crucial issues in today’s aquatic ecosystem. One way to eliminate water pollution in our community is through filtration methods. Mechanical, UV light, and more are some of the various filtration methods that are used in communities all across the world. Many research papers have shown that the usual solution of boiling your water is simply not enough for most health requirements [1]. Due to the extensive research done by many established scientists, people have switched to water filters. <em>"Water filtration is the process of removing or reducing impurities and contaminants from water, making it safer and cleaner for consumption, cooking, and other uses"</em> [1].</p>
+            <p>Water pollution poses a significant threat to aquatic ecosystems and human health by introducing contaminants that degrade water quality, as well as increase the risk of diseases globally. One widely used approach of improving water quality is through the implementation of water filtration systems. Previous studies have demonstrated that boiling water alone may not sufficiently address all water quality concerns and health requirements [1]. As filtration technologies have advanced, water filtration systems have become increasingly common for household and outdoor water treatment. Different filtration technologies remove contaminants through various chemical and physical processes. Mechanical filtration removes larger suspended particles through physical barriers, while granular activated carbon (GAC) reduces chemical contaminants through adsorption. Reverse osmosis (RO) systems use a semipermeable membrane to remove dissolved substances, and ion exchange resins target specific charged particles, such as minerals and metals. Unlike traditional purification methods, ultraviolet (UV) treatment uses radiation to inactivate microorganisms rather than physically removing contaminants. Overall, water filtration removes impurities and contaminants from water, continuously making it safer for drinking, cooking, or other various domestic uses [1].</p>
             
-            <p>There are numerous environmental contaminants that significantly contribute to human disease, affecting climate change and public and individual health, resulting in increased mortality and morbidity [2]. Although pollutants are not new to the environment, their exposure still poses the greatest threat to humanity and is a significant cause of environmental illness and mortality. Urbanization, industrialization, mining, and exploration are some of the human activities that have had the most impacts on worldwide environmental pollution [3]. This research not only applies to just a specific area. Concentrations of at least one chemical contaminant were greater than an established MCL in 13 percent of the 1,389 wells [4].</p>
+            <p>Environmental contaminants, including heavy metals, pathogens, and industrial chemicals, contribute significantly to diseases worldwide by reducing water quality and increasing exposure to hazardous substances [2]. Human activities such as urbanization, industrialization, mining, and exploration have contributed greatly to worldwide environmental pollution and increased the release of contaminants into water sources [3]. Water contamination remains a widespread issue affecting both local communities and global populations. Concentrations of at least one chemical contaminant were greater than an established MCL in 23% of the 1,389 wells [4]. These findings demonstrate the importance of developing accessible and effective purification methods, particularly for individuals who rely on untreated freshwater sources.</p>
             
-            <p>Although previous studies have examined the effectiveness of water filtration methods, comparing multiple water filters at a local creek remains understudied, which is effective because it will help those in societies contribute to the purification methods of local water sources. Our project will help people who may not have as much access to clean water verify if their water is clean and safe to drink and use. The present study aims to determine which of five different water filters removes the greatest amount of pollutants from water collected from a local creek. We hypothesized that the activated carbon filter would remove the highest amount of pollutants. This paper discusses the experimental procedure and compares the filtration methods to show the data analysis on which approach is most effective.</p>
-
-            <h3>Key Terms & Operational Definitions</h3>
-            <div class="terms-grid">
-                <div class="term-card">
-                    <strong>Internal Cancers</strong>
-                    Long-term exposure to heavy metals like arsenic and industrial chemicals (PFAS, pesticides) causing genetic mutations.
-                </div>
-                <div class="term-card">
-                    <strong>Pollutants</strong>
-                    Substances or energy introduced into an environment causing adverse effects on human health or natural ecosystems.
-                </div>
-                <div class="term-card">
-                    <strong>Turbidity</strong>
-                    A quantitative measure of the cloudiness or haziness of a fluid caused by suspended particulate matter.
-                </div>
-                <div class="term-card">
-                    <strong>Granular Activated Carbon (GAC)</strong>
-                    A porous carbon filter media designed to adsorb organic chemicals and contaminants from liquid media.
-                </div>
-                <div class="term-card">
-                    <strong>Reverse Osmosis (RO) Systems</strong>
-                    Forces water under pressure through a semi-permeable membrane to isolate and remove chemical ions.
-                </div>
-                <div class="term-card">
-                    <strong>Ion Exchange Resins</strong>
-                    Polymeric beads acting as small magnets to exchange non-harmful ions for targeted pollutant ions.
-                </div>
-            </div>
+            <p>Although previous studies have evaluated individual water filtration methods, relatively few have directly compared multiple filtration systems using water collected from the same local source under controlled conditions. Many studies focus on the performance of a single filtration technology, making direct comparisons between different purification methods overall difficult. Evaluating multiple filtration approaches under identical conditions allows for a more accurate assessment of their effectiveness, as well as reducing environmental variance within the testing. The results of this study may help individuals identify effective portable purification methods for improving local untreated freshwater quality. The present study aims to determine which of five water filtration methods most effectively improves the quality of freshwater collected from a local creek. The five purification methods evaluated include mechanical filtration, ultraviolet (UV) treatment, reverse osmosis (RO), granular activated carbon (GAC), and ion exchange resins. We hypothesized that the granular activated carbon filter would demonstrate the greatest improvement in water quality due to its ability to adsorb a wide range of chemical contaminants. This study compares the effectiveness of five filtration methods by analyzing changes in water quality measurements before and after filtration.</p>
         </section>
 
         <!-- Section 2: Methods -->
         <section id="methods">
-            <h2>2. Materials & Methods</h2>
-            
-            <h3>2.1 Study Design</h3>
-            <p>We executed 5 trials per filter, resulting in 25 trials in total (n = 5 per group). Each trial was conducted under identical environmental conditions using equal volumes of creek water collected simultaneously from the same sampling location.</p>
+            <h2>2. Methods</h2>
+            <p>Five filtration methods were evaluated, with five independent trials conducted for each method (n = 25 total trials). The independent variable was the type of filtration method used, while the dependent variable included changes in turbidity and water quality measurements before and after filtration. Controlled variables included sample volume, collection location, and testing procedures. Each trial consisted of a separate freshwater sample collected from the same source to allow for direct comparison among purification methods. Water samples were collected from a single location within Ashburn Park Creek in Ashburn, Virginia, during one collection period to minimize environmental variation among samples and improve consistency between trials. The filtration methods evaluated included mechanical, UV treatment, RO, GAC, and ion exchange resins.</p>
 
-            <h3>2.2 Tested Filtration Technologies</h3>
+            <p>To evaluate the effectiveness of each filtration method, water quality was measured using a turbidity sensor and drinking water quality test strips. Turbidity measurements were used to assess changes in water clarity, while water quality test strips were used to evaluate changes in chemical properties of each sample. Filtration materials, a turbidity sensor, and drinking water quality test strips were obtained prior to sample collection. Twenty-five separate water samples, each containing 200 mL, were collected from Ashburn Park Creek under the same environmental conditions. Prior to filtration, each water sample was tested using a turbidity sensor and drinking water quality test strips to establish baseline measurements. Each sample was then filtered using one of the five assigned purification methods, with five samples tested per filtration method. Samples were randomly assigned to filtration groups to reduce potential experimental bias. Following filtration, the same turbidity and water quality measurements were repeated and recorded. Differences between pre-filtration and post-filtration measurements were used to evaluate changes in water quality following each purification method.</p>
+
+            <p>All experimental data was recorded in Google Sheets. A one-way analysis of variance (ANOVA) was performed using the online statistical software Statistics Kingdom to determine whether differences among the five filtration methods were statistically significant.</p>
+
+            <h3>Summary of Tested Filtration Methods</h3>
             <table class="data-table">
                 <thead>
                     <tr>
                         <th>Filter Type</th>
-                        <th>Primary Mechanism</th>
-                        <th>Trials Completed</th>
+                        <th>Mechanism</th>
+                        <th>Sample Volume</th>
+                        <th>Replicates</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Granular Activated Carbon (GAC)</strong></td>
-                        <td>Chemical Adsorption</td>
+                        <td><strong>Mechanical Filter</strong></td>
+                        <td>Physical Barrier Straining</td>
+                        <td>200 mL</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ultraviolet (UV) Treatment</strong></td>
+                        <td>Microorganism Radiation Inactivation</td>
+                        <td>200 mL</td>
                         <td>5</td>
                     </tr>
                     <tr>
                         <td><strong>Reverse Osmosis (RO)</strong></td>
-                        <td>Semi-Permeable Membrane Filtration</td>
+                        <td>Semipermeable Membrane Isolation</td>
+                        <td>200 mL</td>
                         <td>5</td>
                     </tr>
                     <tr>
-                        <td><strong>Ion Exchange Resin</strong></td>
-                        <td>Ionic Particle Binding</td>
+                        <td><strong>Granular Activated Carbon (GAC)</strong></td>
+                        <td>Chemical Adsorption</td>
+                        <td>200 mL</td>
                         <td>5</td>
                     </tr>
                     <tr>
-                        <td><strong>Mechanical Filter</strong></td>
-                        <td>Physical Particle Straining</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Ultraviolet (UV) Light</strong></td>
-                        <td>Electromagnetic Radiation Disinfection</td>
+                        <td><strong>Ion Exchange Resins</strong></td>
+                        <td>Targeted Charged Particle Binding</td>
+                        <td>200 mL</td>
                         <td>5</td>
                     </tr>
                 </tbody>
             </table>
-
-            <h3>2.3 Procedures & Statistical Analysis</h3>
-            <p>Water samples were harvested from the designated creek location. Baseline values for turbidity and chemical contamination were recorded on unfiltered water. Each water sample was passed through its designated filter treatment. Post-treatment measurements were recorded in Google Sheets. Inferential statistical evaluation was conducted using a <strong>One-Way Analysis of Variance (ANOVA)</strong> via Statistics Kingdom.</p>
         </section>
 
         <!-- Section 3: Photo Slideshow -->
         <section id="photos">
             <h2>3. Experimental Photos</h2>
-            <p>Use the left and right arrows to navigate through the project photos:</p>
+            <p>Use the left and right arrows to navigate through project photos:</p>
 
             <div class="carousel-container">
                 <!-- Slide 1 -->
@@ -491,7 +464,7 @@
                     <div class="slide-number">1 / 3</div>
                     <img src="creek-sample.jpg" alt="Creek Water Sampling" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <div class="placeholder-box" style="display:none;">📷 Add <b>creek-sample.jpg</b> to GitHub</div>
-                    <p class="caption">Figure 1: Collecting baseline water samples at the local creek site.</p>
+                    <p class="caption">Figure 1: Collecting baseline 200 mL water samples at Ashburn Park Creek, VA.</p>
                 </div>
 
                 <!-- Slide 2 -->
@@ -499,7 +472,7 @@
                     <div class="slide-number">2 / 3</div>
                     <img src="filter-setup.jpg" alt="Filtration Setup" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <div class="placeholder-box" style="display:none;">📷 Add <b>filter-setup.jpg</b> to GitHub</div>
-                    <p class="caption">Figure 2: Multi-filter comparative experimental setup.</p>
+                    <p class="caption">Figure 2: Multi-filter experimental testing setup.</p>
                 </div>
 
                 <!-- Slide 3 -->
@@ -507,7 +480,7 @@
                     <div class="slide-number">3 / 3</div>
                     <img src="testing-process.jpg" alt="Testing Process" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <div class="placeholder-box" style="display:none;">📷 Add <b>testing-process.jpg</b> to GitHub</div>
-                    <p class="caption">Figure 3: Conducting turbidity and drinking water quality tests.</p>
+                    <p class="caption">Figure 3: Measuring pre- and post-filtration turbidity and chemical properties.</p>
                 </div>
 
                 <!-- Navigation Arrows -->
@@ -516,26 +489,25 @@
             </div>
         </section>
 
-        <!-- Section 4: References -->
-        <section id="references">
-            <h2>4. References</h2>
-            <div class="reference-item">[1] Irish, M. (n.d.). <em>Why is it important to filter water?</em> Aquasana. <a href="https://www.aquasana.com/info/why-is-it-important-to-filter-water-pd.html" target="_blank">View Source</a></div>
-            <div class="reference-item">[2] Shetty, S. S., et al. (2023). Environmental pollutants and their effects on human health. <em>Heliyon</em>, 9(9), e19496. <a href="https://doi.org/10.1016/j.heliyon.2023.e19496" target="_blank">DOI Link</a></div>
-            <div class="reference-item">[3] Centers for Disease Control and Prevention. (2024). <em>How water treatment works</em>. CDC. <a href="https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html" target="_blank">View Source</a></div>
-            <div class="reference-item">[4] DeSimone, L. A., et al. (2009). <em>The quality of our nation's waters: Domestic wells</em> (USGS Circular 1332). <a href="https://doi.org/10.3133/cir1332" target="_blank">USGS Link</a></div>
+        <!-- Section 4: Results & Discussion -->
+        <section id="results">
+            <h2>4. Results & Discussion</h2>
+            <p><em>Data analysis and discussion pending final experiment completion.</em></p>
         </section>
 
-        <!-- Section 5: AI Disclosure -->
-        <section id="ai-disclosure">
-            <h2>5. Responsible AI Usage Disclosure</h2>
-            <p><strong>AI Tool Usage:</strong> N/A (No AI tools were used during research drafting).</p>
-            <p><strong>Growth Check:</strong> Research framing, data processing design, and literature reviews were conducted independently by the student authors.</p>
+        <!-- Section 5: References -->
+        <section id="references">
+            <h2>5. References</h2>
+            <div class="reference-item">[1] Aquasana. (n.d.). <em>Why is it important to filter water?</em> Aquasana. <a href="https://www.aquasana.com/info/why-is-it-important-to-filter-water-pd.html" target="_blank">View Article</a></div>
+            <div class="reference-item">[2] Shetty, S. S., Deepthi, D., Harshitha, S., Sonkusare, S., Naik, P. B., Kumari, N. S., & Madhyastha, H. (2023). Environmental pollutants and their effects on human health. <em>Heliyon</em>, 9(9), e19496. <a href="https://doi.org/10.1016/j.heliyon.2023.e19496" target="_blank">DOI Link</a></div>
+            <div class="reference-item">[3] Centers for Disease Control and Prevention. (2024, February 6). <em>How water treatment works</em>. CDC. <a href="https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html" target="_blank">View Source</a></div>
+            <div class="reference-item">[4] DeSimone, L. A., Hamilton, P. A., & Gilliom, R. J. (2009). <em>The quality of our nation's waters: Quality of water from domestic wells in principal aquifers of the United States, 1991–2004—Overview of major findings</em> (U.S. Geological Survey Circular 1332). U.S. Geological Survey. <a href="https://doi.org/10.3133/cir1332" target="_blank">USGS Link</a></div>
         </section>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Student Science Research Team. Hosted on GitHub Pages.</p>
+        <p>&copy; 2026 Next In Research Team. Hosted on GitHub Pages.</p>
     </footer>
 
     <!-- Carousel JavaScript -->
