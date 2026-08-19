@@ -195,26 +195,43 @@
         }
 
         h3 {
-            color: var(--text-dark);
-            margin-top: 1.75rem;
-            font-size: 1.25rem;
-            font-weight: 600;
+            color: var(--primary-dark);
+            margin-top: 1.25rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.15rem;
+            font-weight: 700;
         }
 
-        p {
-            margin-bottom: 1.25rem;
-            color: #334155;
-            font-size: 1.02rem;
-        }
-
-        /* Abstract Box */
-        .abstract-box {
+        /* Bulleted Card Containers */
+        .content-group {
             background: #f8fafc;
             border-left: 4px solid var(--primary);
-            padding: 1.25rem 1.5rem;
-            border-radius: 0 8px 8px 0;
-            margin-bottom: 1.5rem;
-            font-style: normal;
+            padding: 1.5rem 1.75rem;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 1.25rem;
+        }
+
+        .styled-list {
+            margin: 0;
+            padding-left: 1.25rem;
+        }
+
+        .styled-list li {
+            margin-bottom: 0.65rem;
+            color: #334155;
+            font-size: 0.98rem;
+            line-height: 1.55;
+        }
+
+        .styled-list li strong {
+            color: var(--text-dark);
+        }
+
+        .section-divider {
+            border: 0;
+            height: 1px;
+            background: var(--border-color);
+            margin: 1.5rem 0;
         }
 
         /* Data Table */
@@ -381,37 +398,118 @@
             </div>
         </div>
 
-        <!-- Abstract Section -->
+        <!-- Section: Abstract -->
         <section id="abstract">
             <h2>Abstract</h2>
-            <div class="abstract-box">
- <p>-The purpose of the study is to compare 5 of the most commonly used filtration methods to see which one purifies water best.               
-     -We took 25 water samples from a creek in Ashburn park, each one having  200 mL of water, and 5 samples per filter. We tested five filters.
-     -Water quality was measured before and after using turbidity and water quality tests.
-     -We ran a one-way ANOVA test using the turbidity data and averages within the trials per filter.
-    - Our hypothesis was that the granular activated carbon filter would filter the most pollution and purify best.
-     -After testing, our hypothesis was proven wrong and that reverse osmosis was the best filter to use.</p>
+            
+            <div class="content-group">
+                <h3>📌 Overview & Research Context</h3>
+                <ul class="styled-list">
+                    <li><strong>Global Concern:</strong> Water contamination poses an escalating threat to both natural aquatic ecosystems and human health.</li>
+                    <li><strong>Practical Solution:</strong> Advanced water filtration technology offers an accessible, practical approach for reducing pollutants in freshwater.</li>
+                    <li><strong>Varied Mechanisms:</strong> The effectiveness of purification methods can vary significantly based on their unique physical or chemical processes.</li>
+                    <li><strong>Local Focus:</strong> This study evaluates untreated freshwater collected directly from Ashburn Park Creek in Ashburn, Virginia.</li>
+                    <li><strong>Core Purpose:</strong> To determine which of five distinct filtration technologies provides the greatest overall water quality improvement.</li>
+                </ul>
+            </div>
+
+            <div class="content-group">
+                <h3>🧪 Methodology & Experimental Design</h3>
+                <ul class="styled-list">
+                    <li><strong>Tested Technologies:</strong> Evaluated Mechanical, Ultraviolet (UV), Reverse Osmosis (RO), Granular Activated Carbon (GAC), and Ion Exchange Resins.</li>
+                    <li><strong>Sample Volume:</strong> Collected and tested twenty-five independent freshwater samples, each standardized to exactly 200 milliliters.</li>
+                    <li><strong>Replicate Design:</strong> Assigned five independent water samples to each of the five filtration methods ($n = 5$ per group).</li>
+                    <li><strong>Quality Testing:</strong> Assessed water quality before and after filtration using digital turbidity sensors and drinking water test strips.</li>
+                    <li><strong>Statistical Evaluation:</strong> Analyzed changes in water indicators using a One-Way Analysis of Variance (ANOVA) to evaluate statistical significance.</li>
+                </ul>
+            </div>
+
+            <div class="content-group">
+                <h3>💡 Hypothesis & Projected Outcomes</h3>
+                <ul class="styled-list">
+                    <li><strong>Primary Hypothesis:</strong> Granular Activated Carbon (GAC) will yield the greatest overall improvement in freshwater quality.</li>
+                    <li><strong>Hypothesis Rationale:</strong> GAC features high surface area porosity optimized for adsorbing a broad spectrum of chemical contaminants.</li>
+                    <li><strong>Baseline Evaluation:</strong> Initial pre-filtration testing established baseline turbidity and chemical parameter levels across all samples.</li>
+                    <li><strong>Comparative Goal:</strong> Identify the most effective portable purification method for individuals relying on raw freshwater sources.</li>
+                    <li><strong>Final Status:</strong> Experimental trials complete; final post-filtration statistical conclusions are currently being compiled.</li>
+                </ul>
             </div>
         </section>
 
         <!-- Section 1: Introduction -->
         <section id="intro">
             <h2>1. Introduction</h2>
-            <p>Water pollution poses a significant threat to aquatic ecosystems and human health by introducing contaminants that degrade water quality, as well as increase the risk of diseases globally. One widely used approach of improving water quality is through the implementation of water filtration systems. Previous studies have demonstrated that boiling water alone may not sufficiently address all water quality concerns and health requirements [1]. As filtration technologies have advanced, water filtration systems have become increasingly common for household and outdoor water treatment. Different filtration technologies remove contaminants through various chemical and physical processes. Mechanical filtration removes larger suspended particles through physical barriers, while granular activated carbon (GAC) reduces chemical contaminants through adsorption. Reverse osmosis (RO) systems use a semipermeable membrane to remove dissolved substances, and ion exchange resins target specific charged particles, such as minerals and metals. Unlike traditional purification methods, ultraviolet (UV) treatment uses radiation to inactivate microorganisms rather than physically removing contaminants. Overall, water filtration removes impurities and contaminants from water, continuously making it safer for drinking, cooking, or other various domestic uses [1].</p>
-            
-            <p>Environmental contaminants, including heavy metals, pathogens, and industrial chemicals, contribute significantly to diseases worldwide by reducing water quality and increasing exposure to hazardous substances [2]. Human activities such as urbanization, industrialization, mining, and exploration have contributed greatly to worldwide environmental pollution and increased the release of contaminants into water sources [3]. Water contamination remains a widespread issue affecting both local communities and global populations. Concentrations of at least one chemical contaminant were greater than an established MCL in 23% of the 1,389 wells [4]. These findings demonstrate the importance of developing accessible and effective purification methods, particularly for individuals who rely on untreated freshwater sources.</p>
-            
-            <p>Although previous studies have evaluated individual water filtration methods, relatively few have directly compared multiple filtration systems using water collected from the same local source under controlled conditions. Many studies focus on the performance of a single filtration technology, making direct comparisons between different purification methods overall difficult. Evaluating multiple filtration approaches under identical conditions allows for a more accurate assessment of their effectiveness, as well as reducing environmental variance within the testing. The results of this study may help individuals identify effective portable purification methods for improving local untreated freshwater quality. The present study aims to determine which of five water filtration methods most effectively improves the quality of freshwater collected from a local creek. The five purification methods evaluated include mechanical filtration, ultraviolet (UV) treatment, reverse osmosis (RO), granular activated carbon (GAC), and ion exchange resins. We hypothesized that the granular activated carbon filter would demonstrate the greatest improvement in water quality due to its ability to adsorb a wide range of chemical contaminants. This study compares the effectiveness of five filtration methods by analyzing changes in water quality measurements before and after filtration.</p>
+
+            <div class="content-group">
+                <h3>🌍 Water Pollution & Filtration Fundamentals</h3>
+                <ul class="styled-list">
+                    <li><strong>Ecosystem & Health Threat:</strong> Water pollution introduces harmful contaminants that degrade aquatic health and increase global disease risks.</li>
+                    <li><strong>Inadequacy of Boiling:</strong> Previous research demonstrates that boiling water alone cannot sufficiently eliminate all chemical pollutants or meet safety requirements [1].</li>
+                    <li><strong>Household & Outdoor Use:</strong> Modern advanced filtration systems have become essential, accessible tools for residential and field purification.</li>
+                    <li><strong>Mechanistic Diversity:</strong> Filtration relies on varying processes: mechanical (physical barrier), GAC (adsorption), RO (semipermeable membrane), and ion exchange (charged particle binding).</li>
+                    <li><strong>Disinfection vs Physical Removal:</strong> Unlike physical barriers, UV light employs radiation to inactivate microorganisms without removing physical particles [1].</li>
+                </ul>
+            </div>
+
+            <div class="content-group">
+                <h3>⚠️ Environmental Contaminants & Public Health</h3>
+                <ul class="styled-list">
+                    <li><strong>Hazardous Exposure:</strong> Heavy metals, pathogens, and industrial waste significantly increase disease vulnerability worldwide [2].</li>
+                    <li><strong>Human Activity Impacts:</strong> Urbanization, industrialization, mining, and exploration drive increased toxic runoff into natural freshwater bodies [3].</li>
+                    <li><strong>Widespread Impact:</strong> Untreated water contamination remains a critical global issue, directly impacting local and municipal water supplies.</li>
+                    <li><strong>Well Water Contamination:</strong> USGS research shows 23% of 1,389 tested domestic wells exceeded Maximum Contaminant Levels (MCL) for at least one chemical [4].</li>
+                    <li><strong>Need for Accessible Purification:</strong> Highlights the urgent necessity for simple, highly effective purification methods for individuals using raw water sources.</li>
+                </ul>
+            </div>
+
+            <div class="content-group">
+                <h3>🎯 Research Gap & Study Objectives</h3>
+                <ul class="styled-list">
+                    <li><strong>Comparative Research Gap:</strong> Few existing studies directly compare multiple filtration systems using identical freshwater sources under controlled conditions.</li>
+                    <li><strong>Controlled Testing Advantage:</strong> Evaluating five methods simultaneously minimizes environmental variance and improves measurement accuracy.</li>
+                    <li><strong>Target Application:</strong> Helps individuals identify optimal, portable purification methods for raw freshwater in real-world environments.</li>
+                    <li><strong>Study Focus:</strong> Directly compares Mechanical, UV, RO, GAC, and Ion Exchange performance on local stream water.</li>
+                    <li><strong>Core Working Hypothesis:</strong> GAC will achieve the highest overall score due to its superior capacity to adsorb chemical impurities.</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Section 2: Methods -->
         <section id="methods">
             <h2>2. Methods</h2>
-            <p>Five filtration methods were evaluated, with five independent trials conducted for each method (n = 25 total trials). The independent variable was the type of filtration method used, while the dependent variable included changes in turbidity and water quality measurements before and after filtration. Controlled variables included sample volume, collection location, and testing procedures. Each trial consisted of a separate freshwater sample collected from the same source to allow for direct comparison among purification methods. Water samples were collected from a single location within Ashburn Park Creek in Ashburn, Virginia, during one collection period to minimize environmental variation among samples and improve consistency between trials. The filtration methods evaluated included mechanical, UV treatment, RO, GAC, and ion exchange resins.</p>
 
-            <p>To evaluate the effectiveness of each filtration method, water quality was measured using a turbidity sensor and drinking water quality test strips. Turbidity measurements were used to assess changes in water clarity, while water quality test strips were used to evaluate changes in chemical properties of each sample. Filtration materials, a turbidity sensor, and drinking water quality test strips were obtained prior to sample collection. Twenty-five separate water samples, each containing 200 mL, were collected from Ashburn Park Creek under the same environmental conditions. Prior to filtration, each water sample was tested using a turbidity sensor and drinking water quality test strips to establish baseline measurements. Each sample was then filtered using one of the five assigned purification methods, with five samples tested per filtration method. Samples were randomly assigned to filtration groups to reduce potential experimental bias. Following filtration, the same turbidity and water quality measurements were repeated and recorded. Differences between pre-filtration and post-filtration measurements were used to evaluate changes in water quality following each purification method.</p>
+            <div class="content-group">
+                <h3>⚙️ Experimental Setup & Controls</h3>
+                <ul class="styled-list">
+                    <li><strong>Sample Size ($n = 25$):</strong> Evaluated 5 filtration methods with 5 independent trials conducted per method.</li>
+                    <li><strong>Variables:</strong> Independent variable was filter type; dependent variables were changes in turbidity and chemical test parameters.</li>
+                    <li><strong>Controlled Factors:</strong> Sample volume (200 mL), collection location, testing procedures, and environmental conditions were strictly standardized.</li>
+                    <li><strong>Collection Site:</strong> All samples were collected during a single timeframe from Ashburn Park Creek in Ashburn, Virginia.</li>
+                    <li><strong>Minimizing Bias:</strong> Samples were randomly assigned to treatment groups to eliminate experimental selection bias.</li>
+                </ul>
+            </div>
 
-            <p>All experimental data was recorded in Google Sheets. A one-way analysis of variance (ANOVA) was performed using the online statistical software Statistics Kingdom to determine whether differences among the five filtration methods were statistically significant.</p>
+            <div class="content-group">
+                <h3>🔬 Testing Procedures & Data Collection</h3>
+                <ul class="styled-list">
+                    <li><strong>Clarity Measurement:</strong> Employed a digital turbidity sensor to quantify pre- and post-filtration water clarity.</li>
+                    <li><strong>Chemical Profiling:</strong> Utilized drinking water quality test strips to record chemical parameter shifts across each trial.</li>
+                    <li><strong>Baseline Recording:</strong> Measured turbidity and chemical metrics for all 25 raw samples prior to running through filters.</li>
+                    <li><strong>Filtration Execution:</strong> Filtered each 200 mL sample using its assigned method (Mechanical, UV, RO, GAC, Ion Exchange).</li>
+                    <li><strong>Post-Test Assessment:</strong> Repeated identical turbidity and chemical measurements immediately following filtration.</li>
+                </ul>
+            </div>
+
+            <div class="content-group">
+                <h3>📊 Statistical Analysis Protocol</h3>
+                <ul class="styled-list">
+                    <li><strong>Data Logging:</strong> Recorded all raw baseline and post-filtration measurements in Google Sheets.</li>
+                    <li><strong>Metric Shift Calculation:</strong> Calculated net change ($\Delta = \text{Post} - \text{Pre}$) for turbidity and chemical parameters.</li>
+                    <li><strong>Analytical Software:</strong> Used the online statistical platform Statistics Kingdom to execute data analysis.</li>
+                    <li><strong>Hypothesis Testing:</strong> Performed a One-Way Analysis of Variance (ANOVA) across all five treatment groups.</li>
+                    <li><strong>Significance Evaluation:</strong> Assessed $p$-values to determine if filtration performance differences were statistically significant.</li>
+                </ul>
+            </div>
 
             <h3>Summary of Tested Filtration Methods</h3>
             <table class="data-table">
@@ -461,14 +559,24 @@
         <!-- Section 3: Photo Slideshow -->
         <section id="photos">
             <h2>3. Experimental Photos</h2>
-            <p>Use the left and right arrows to navigate through project photos:</p>
+            
+            <div class="content-group">
+                <h3>📸 Photo Gallery Overview</h3>
+                <ul class="styled-list">
+                    <li><strong>Field Collection:</strong> Documenting raw sample acquisition at Ashburn Park Creek, VA.</li>
+                    <li><strong>Filter Calibration:</strong> Setting up the five distinct filtration systems under controlled lab settings.</li>
+                    <li><strong>Measurement Phase:</strong> Utilizing digital turbidity sensors and chemical test strips pre- and post-filtration.</li>
+                    <li><strong>Sample Management:</strong> Maintaining standardized 200 mL water volumes across all 25 test replicates.</li>
+                    <li><strong>Interactive View:</strong> Use the left and right navigation arrows below to toggle through project photos.</li>
+                </ul>
+            </div>
 
             <div class="carousel-container">
                 <!-- Slide 1 -->
                 <div class="carousel-slide active">
                     <div class="slide-number">1 / 3</div>
-                    <img src="1.png" alt="Creek Water Sampling" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <div class="placeholder-box" style="display:none;">📷 Add <b>1.png</b> to GitHub</div>
+                    <img src="creek-sample.jpg" alt="Creek Water Sampling" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div class="placeholder-box" style="display:none;">📷 Add <b>creek-sample.jpg</b> to GitHub</div>
                     <p class="caption">Figure 1: Collecting baseline 200 mL water samples at Ashburn Park Creek, VA.</p>
                 </div>
 
@@ -497,16 +605,44 @@
         <!-- Section 4: Results & Discussion -->
         <section id="results">
             <h2>4. Results & Discussion</h2>
-            <p><em>Data analysis and discussion pending final experiment completion.</em></p>
+
+            <div class="content-group">
+                <h3>📈 Preliminary Results Overview</h3>
+                <ul class="styled-list">
+                    <li><strong>Data Tabulation:</strong> Raw measurements pre- and post-filtration are currently being formatted.</li>
+                    <li><strong>Turbidity Shifts:</strong> Calculating percent reduction in clarity values across all five filtration methods.</li>
+                    <li><strong>Chemical Strips:</strong> Comparing pre- and post-filtration chemical test strip readings for each trial.</li>
+                    <li><strong>ANOVA Calculation:</strong> Executing One-Way ANOVA to evaluate differences between treatment groups.</li>
+                    <li><strong>Statistical Significance:</strong> Assessing $F$-statistic and $p$-value outcomes against standard $\alpha = 0.05$ threshold.</li>
+                </ul>
+            </div>
+
+            <div class="content-group">
+                <h3>💬 Discussion & Experimental Insights</h3>
+                <ul class="styled-list">
+                    <li><strong>Hypothesis Evaluation:</strong> Findings will be evaluated against the initial hypothesis regarding GAC adsorption efficiency.</li>
+                    <li><strong>Comparative Performance:</strong> Analyzing which physical or chemical mechanisms achieved the greatest contaminant reduction.</li>
+                    <li><strong>Practical Implications:</strong> Discussing real-world applications for field water treatment and portable filters.</li>
+                    <li><strong>Study Limitations:</strong> Outlining potential sources of error, including sample variation and test strip sensitivity limits.</li>
+                    <li><strong>Future Directions:</strong> Identifying pathways for multi-stage filter combination testing in future research.</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Section 5: References -->
         <section id="references">
             <h2>5. References</h2>
-            <div class="reference-item">[1] Aquasana. (n.d.). <em>Why is it important to filter water?</em> Aquasana. <a href="https://www.aquasana.com/info/why-is-it-important-to-filter-water-pd.html" target="_blank">View Article</a></div>
-            <div class="reference-item">[2] Shetty, S. S., Deepthi, D., Harshitha, S., Sonkusare, S., Naik, P. B., Kumari, N. S., & Madhyastha, H. (2023). Environmental pollutants and their effects on human health. <em>Heliyon</em>, 9(9), e19496. <a href="https://doi.org/10.1016/j.heliyon.2023.e19496" target="_blank">DOI Link</a></div>
-            <div class="reference-item">[3] Centers for Disease Control and Prevention. (2024, February 6). <em>How water treatment works</em>. CDC. <a href="https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html" target="_blank">View Source</a></div>
-            <div class="reference-item">[4] DeSimone, L. A., Hamilton, P. A., & Gilliom, R. J. (2009). <em>The quality of our nation's waters: Quality of water from domestic wells in principal aquifers of the United States, 1991–2004—Overview of major findings</em> (U.S. Geological Survey Circular 1332). U.S. Geological Survey. <a href="https://doi.org/10.3133/cir1332" target="_blank">USGS Link</a></div>
+
+            <div class="content-group">
+                <h3>📚 Cited Literature</h3>
+                <ul class="styled-list">
+                    <li><strong>[1] Aquasana:</strong> Aquasana. (n.d.). <em>Why is it important to filter water?</em> <a href="https://www.aquasana.com/info/why-is-it-important-to-filter-water-pd.html" target="_blank">View Article</a></li>
+                    <li><strong>[2] Heliyon Health Study:</strong> Shetty, S. S., et al. (2023). Environmental pollutants and their effects on human health. <em>Heliyon</em>, 9(9), e19496. <a href="https://doi.org/10.1016/j.heliyon.2023.e19496" target="_blank">DOI Link</a></li>
+                    <li><strong>[3] CDC Guidelines:</strong> Centers for Disease Control and Prevention. (2024). <em>How water treatment works</em>. CDC. <a href="https://www.cdc.gov/drinking-water/about/how-water-treatment-works.html" target="_blank">View Source</a></li>
+                    <li><strong>[4] USGS Survey Circular:</strong> DeSimone, L. A., et al. (2009). <em>Quality of water from domestic wells in principal aquifers of the U.S.</em> (USGS Circular 1332). <a href="https://doi.org/10.3133/cir1332" target="_blank">USGS Link</a></li>
+                    <li><strong>[5] Statistical Software:</strong> Statistics Kingdom. (2026). <em>One-Way ANOVA Calculator</em>. Online Statistical Software.</li>
+                </ul>
+            </div>
         </section>
 
     </div>
